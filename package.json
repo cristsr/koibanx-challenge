@@ -17,7 +17,11 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
+    "@types/exceljs": "^0.5.3",
+    "@types/mongoose": "^5.11.96",
+    "@types/multer": "^1.4.12",
     "@types/uuid": "^10.0.0",
+    "ajv": "^8.17.1",
     "axios": "^1.7.9",
     "body-parser": "^1.20.3",
     "bufferjs": ">=3.0.1",
@@ -25,6 +29,7 @@
     "class-validator": "^0.14.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
     "express": "^4.21.2",
     "form-data": "^4.0.1",
     "helmet": "^8.0.0",
@@ -35,6 +40,8 @@
     "multer": "^1.4.5-lts.1",
     "reflect-metadata": "^0.2.2",
     "routing-controllers": "^0.10.4",
+    "rxjs": "^7.8.1",
+    "short-uuid": "^5.2.0",
     "typedi": "^0.10.0"
   },
   "devDependencies": {
