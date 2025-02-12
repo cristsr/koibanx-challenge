@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import {Param, Get, Post, Delete, JsonController, UploadedFile, Patch, Body, QueryParam} from 'routing-controllers';
+import {Param, Get, Post, JsonController, UploadedFile, Patch, Body, QueryParam} from 'routing-controllers';
 import {Service} from "typedi";
 import {TaskService} from "../services";
 import {Express} from "express";

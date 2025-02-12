@@ -4,6 +4,9 @@ import {Container} from "typedi";
 import {storage} from "./config";
 import multer from "multer";
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config()
 
 async function bootstrap() {
     useContainer(Container);
@@ -11,7 +14,7 @@ async function bootstrap() {
 
     multer({ storage })
 
-    await mongoose.connect("mongodb://localhost:27017/koibanx",)
+    await mongoose.connect(process.env.DB_URI as string)
 
     useExpressServer(app, {
         controllers: [__dirname + "/**/*.controller.ts"],
@@ -22,7 +25,7 @@ async function bootstrap() {
         development: false
     });
 
-    app.listen(3000, () => {
+    app.listen(process.env.PORT, () => {
         console.log("Server running on port 3000");
     })
 }
