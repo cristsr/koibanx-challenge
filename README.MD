@@ -37,7 +37,6 @@ Se requiere un servicio de carga de planillas de cálculo Excel con validación 
 procesamiento.
 
 ### Requerimientos del producto
-- 
 - El ejercicio debe ser resuelto en NodeJS utilizando Express para la interfaz HTTP y MongoDB como base de datos NoSQL. (Se puede y se recomienda utilizar Mongoose como ORM).
 - La API debe respetar formato REST con correcto mapeo de errores.
 - Los endpoints deben ser permisionados.
